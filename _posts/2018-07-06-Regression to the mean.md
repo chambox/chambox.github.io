@@ -3,6 +3,10 @@ layout: post
 title: Regression to the mean and James Stein estimators
 ---
 
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 The title, “regression to the mean”, immediately sounds sophisticated, and may seem like an article exclusive to statisticians.  But when I read the international bestseller’s book:  [Thinking Fast and Slow](https://www.amazon.fr/Thinking-Fast-Slow-Daniel-Kahneman/dp/0141033576), by [Daniel Kahneman](https://en.wikipedia.org/wiki/Daniel_Kahneman), I noticed this is not true.  Daniel  Kahneman gives lots of excellent examples of regression to the mean.  Amongst them, I admired one, which I describe subsequently in this post.
 
 Daniel  Kahneman starts his Chapter 17 describing a talk he gave to flight instructors in Israel.  In his speech, he emphasised the well-known principle of reward for improved performance rather than punishment for mistakes.   As a response to his talk, one of the instructors, raised his hand supposedly to ask a question but ended up giving a speech of his own. This instructor’s point of view was the opposite. He said when I train my flight cadets; usually, when I praised them for improved performance, it is followed by a bad performance when they are asked to do it again.  Conversely, when I shout in their earpiece for a lousy manoeuvre, the next one is usually better.
