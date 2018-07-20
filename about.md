@@ -9,5 +9,8 @@ permalink: /about/
 ### More Information
 
 ### Contact me
+
+Tel: 0032471600750
+
 [chamberlain.mbah@ugent.be](mailto:chamberlain.mbah@ugent.be)
-[chamberlain.mbah.f@gmail.com](mailto:chamberlain.mbah.f@gmail.com)
+
