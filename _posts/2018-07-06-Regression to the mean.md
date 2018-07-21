@@ -98,7 +98,7 @@ Fisherians, i.e.,  defenders of the MLE  might then say that of course, we expec
 Suppose $$x_i\mid \mu_i\sim N(\mu_i,1)$$ independently for $$i=1,\ldots,n$$, $$n > 3$$. Then 
 
 $$
-E(\|\hat \mu^\text{JS}-\mu\|^2)-E(\|\hat \mu^\text{MLE}-\mu\|^2).
+E(\|\hat \mu^\text{JS}-\mu\|^2)\leq E(\|\hat \mu^\text{MLE}-\mu\|^2).
 $$
 
 Where $$\mu=(\mu_1,\ldots,\mu_n)$$,  $$\hat \mu^\text{JS}=(\hat \mu_1^\text{JS},\ldots,\hat \mu_n^\text{JS})$$, and $$\hat \mu^\text{MLE}=(\hat \mu_1^\text{MLE},\ldots,\hat \mu_n^\text{MLE})$$.
