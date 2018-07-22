@@ -4,9 +4,6 @@ title:
 permalink: /about/
 ---
 
-
-
-### More Information
 The European Union awarded me a scholarship to work on the [REQUITE](https://www.requite.eu/) project as a Ph.D. student. The purpose of the REQUITE  was to try to predict which patients are more likely to have side effects from radiotherapy. 
 
 As part of my research, I developed Machine Learning algorithms to classify cancer patients receiving radiotherapy into two groups: (1) Those that will develop side-effects from the treatment and (2) those that will not develop side-effects. 
