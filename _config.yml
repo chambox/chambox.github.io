@@ -6,7 +6,7 @@
 name: Chamberlain Mbah
 
 # Short bio or description (displayed in the header)
-description: Data scientist
+description: Data scientist at Tobania
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars2.githubusercontent.com/u/6084624?v=3&u=87d08849a2231f8ab1b9c86b891cbcc63dd0e21f&s=400
@@ -20,15 +20,15 @@ markdown: kramdown
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: mbah.chamberlain@tobania.be
   facebook:
   flickr:
   github: chambox
   instagram:
-  linkedin:
+  linkedin: linkedin.com/in/chamberlain-mbah-700a295
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: chambox
+  twitter: ChamberlainMbah
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/

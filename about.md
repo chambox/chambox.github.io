@@ -3,6 +3,8 @@ layout: page
 title: 
 permalink: /about/
 ---
+Currently I am a data scientist at [Tobania](https://www.tobania.be/nl-be/)
+
 
 The European Union awarded me a scholarship to work on the [REQUITE](https://www.requite.eu/) project as a Ph.D. student. The purpose of the REQUITE  was to try to predict which patients are more likely to have side effects from radiotherapy. 
 
@@ -15,7 +17,7 @@ I also supervised student projects in Machine Learning and tutor master thesis i
 
 ### Contact me
 
-Tel: 0032471600750
+Tel: +32471600750
 
 [chamberlain.mbah@ugent.be](mailto:chamberlain.mbah@ugent.be)
 

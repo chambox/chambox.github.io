@@ -7,7 +7,8 @@ title: Regression to the mean and James Stein estimators
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-
+* TOC
+{:toc}
 The title, “regression to the mean”, immediately sounds sophisticated, and may seem like an article exclusive to statisticians.  But when I read the international bestseller’s book:  [Thinking Fast and Slow](https://www.amazon.fr/Thinking-Fast-Slow-Daniel-Kahneman/dp/0141033576), by [Daniel Kahneman](https://en.wikipedia.org/wiki/Daniel_Kahneman), I noticed this is not true.  Daniel  Kahneman gives lots of excellent examples of regression to the mean.  Amongst them, I admired one, which I describe subsequently in this post.
 
 ![](../../images/manoeivre.jpg)
@@ -19,7 +20,7 @@ Daniel  Kahneman starts his Chapter 17 describing a talk he gave to flight instr
 
 Daniel felt this was a eureka moment to discuss regression to the mean, it was so crucial to him that he even wrote about it in his book.  Daniel in response to the instructor’s comment said this: “As an instructor, you have probably seen/observed many manoeuvres made by your flight cadets.   And most probably you only praised flight cadets, if their manoeuvres were far better than the average performance. The next time they try to do the same manoeuvre, they do worse just because there was a little element of chance in the first manoeuvre, making it extremely good.  On the other hand, the instructor probably only shouts in the earphones of a flight cadet, if his manoeuvre is far worse than the average performance of other flight cadets.  The next time he tries to do the same manoeuvre, he does better, just because in the first manoeuvre he had an extreme bad luck”.   This means flight cadets performances turn to stay around the average performance. If a flight cadet will repeat their manoeuvre the second time when they had an extreme performance in the first, the second performance turns to go in the opposite direction of the first. The second time, outstanding performances go worse and terrible performances get better.  Also, most likely, flight cadets that stay consistent in their performance, first and second, are those whose performances are close to the average performance.   
 
-### Causal effect
+##  Causal effect
 
 The flight instructor’s comment immediately attributed a causal effect of praise or shouting to the earphones of the flight cadets, to their performance in the next flight manoeuvre. However, there is no link between praise or shouting to flight cadets’ earphones and their second performances. If the flight instructor would have observed very bad or very good performances and did not react, he would have realised this.  Him reacting to or not reacting to the flight cadet's performances will lead to the same outcome.  It is a natural phenomenon that flight cadets manoeuvre performance turns to stay around the average performance of the group.   This phenomenon is known as regression to the mean; it has no cause, it is just a simple law that governs the flight cadets manoeuvre performances.  Statisticians call this the Gaussian law, a bell-shaped symmetric distribution.
 
