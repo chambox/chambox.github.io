@@ -71,7 +71,7 @@ The variable weights determine how much influence a variable has on the attritio
 The weights also have signs; the signs add more flavour to the interpretation. Variables with a positive weight translate into a high probability of attrition if an employee has a large value for that variable. On the other hand, variables with a negative weight translate into a small probability of attrition if an employee will have a large value for that variable.  The nice figure below shows the specific results obtained from the synthetic dataset. 
 
 ## What we found
-![Caption of here](../../images/attrition.png){:height="150%" width="150%"}
+![Caption of here](../../images/Results.png){:height="150%" width="150%"}
 
 The figure above answers the first question the HR management of the manufacturing company was asking; namely "What are the factors affecting attrition".
 
