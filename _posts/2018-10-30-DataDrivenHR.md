@@ -73,22 +73,23 @@ The weights also have signs; the signs add more flavour to the interpretation. V
 ## What we found
 ![Caption of here](../../images/Results.png){:height="150%" width="150%"}
 
-The figure above answers the first question the HR management of the manufacturing company was asking; namely "What are the factors affecting attrition".
+The figure above answers the first question the HR management of the manufacturing company was asking; namely "What are the factors affecting attrition?"
 
 The figure shows the variables against their weights with positive weights corresponding to variables that boost attrition and negative weights corresponding to variables that reduce attrition. Amongst the variables that boost attrition, **overTime** stands out. An employee who works overtime is more likely to quit compared to an employee with similar characteristics with no overtime.  Of course, this will depend on whether the employee is willingly working overtime and receives extra compensation for it. 
 
 The results also show that employees with  **single marital  status**  will easily leave the company compared to their married colleagues with similar characteristics. This makes sense because single people typically have no kids, are younger, most likely to have less financial commitments and will often quit their jobs impulsively unlike their married colleagues,  who perhaps might want to first consult with their spouse, take the children into account and so on. 
 
-This dataset suggests that employees who travel frequently are also more likely to quit their job. Well, this is different for me though, I typically prefer to travel, but I guess most people in this company don't, and it drives them to quit. 
+This dataset suggests that employees who **travel frequently** are also more likely to quit their job. Well, this is different for me though, I typically prefer to travel, but I guess most people in this company don't, and it drives them to quit. 
 
-On the other hand, when employees are satisfied with their working environment, they tend  to stay working for their employer. Of course, this makes sense, spending on average eight hours a day, five days a week in a place you don't like can be difficult.  Job satisfaction and how involved employees are at their job also makes employees stay with their employer. The problem with these variables is the difficulty involved in measuring them. How do you measure environmental satisfaction and job satisfaction? Probably through questionnaires. Questionnaires have problems:  employees who eventually answer these questionnaires might be dishonest, response bias,  and so on.  I will typically not trust these variables except there is an objective way to measure them. 
+On the other hand, when employees are satisfied with their working environment, they tend  to stay working for their employer. Of course, this makes sense, spending on average eight hours a day, five days a week in a place you don't like can be difficult.  **Job satisfaction** and how **involved** employees are at their job also makes employees stay with their employer. The problem with these variables is the difficulty involved in measuring them. How do you measure environmental satisfaction and job satisfaction? Probably through questionnaires. Questionnaires have problems:  employees who eventually answer these questionnaires might be dishonest, response bias,  and so on.  I will typically not trust these variables except there is an objective way to measure them. 
 
-Age -- older people tend to stay with their employer which is also inversely correlated with marital status which positively drives attrition. Note that  many variables are correlated in this data set but our algorithm has also taken their correlation into account. 
+**Age** -- older people tend to stay with their employer. Age is also inversely correlated with marital status which positively drives attrition. Note that  many variables are correlated in this data set but our algorithm has also taken their correlation into account. 
 
 The results also show that employees in R&D (research and development) tend to stay with their employer. Research involves constant innovation, and I will imagine that employees in this department like their job and tend to stick with their employer. 
 
 I have only mentioned the rationale behind a few variables from the plot. You can go through the graph to interpret the other variables similarly. 
 
+##Predict attrition
 Can we predict attrition? This was the second question the HR management department had particular  interest  in.  The algorithm we developed for this dataset had an 85 percent accuracy in predicting attrition.  These are impressive results. In general, the results make sense, and we hope this basic exercise has inspired you to transform your HR management to become data-driven. 
 
 
