@@ -90,6 +90,7 @@ The results also show that employees in R&D (research and development) tend to s
 I have only mentioned the rationale behind a few variables from the plot. You can go through the graph to interpret the other variables similarly. 
 
 ##Predict attrition
+
 Can we predict attrition? This was the second question the HR management department had particular  interest  in.  The algorithm we developed for this dataset had an 85 percent accuracy in predicting attrition.  These are impressive results. In general, the results make sense, and we hope this basic exercise has inspired you to transform your HR management to become data-driven. 
 
 
