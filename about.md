@@ -3,7 +3,9 @@ layout: page
 title: 
 permalink: /about/
 ---
-Currently I am a data scientist at [Tobania](https://www.tobania.be/nl-be/)
+Currently I am a data scientist at [Tobania](https://www.tobania.be/nl-be/).
+
+I am an R shiny consultant, R shiny has been my passion for sometime now. I have always been a great supporter of open source and R shiny is one of the reasons why we should all support open source. Compared to the likes of power BI, tableau, Qlik and others, R shiny stands out.  
 
 
 The European Union awarded me a scholarship to work on the [REQUITE](https://www.requite.eu/) project as a Ph.D. student. The purpose of the REQUITE  was to try to predict which patients are more likely to have side effects from radiotherapy. 
