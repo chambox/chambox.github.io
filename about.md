@@ -11,7 +11,7 @@ Currently I am a data scientist at [Yields.io](https://www.yields.io/).
 
 Tel: +32471600750
 
-[chamberlain.mbah@ugent.be](mailto:chamberlain.mbah.f@gmail.com)
+[chamberlain.mbah.f@gmail.com](mailto:chamberlain.mbah.f@gmail.com)
 
 
 ### Selected publications
