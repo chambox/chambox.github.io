@@ -3,25 +3,15 @@ layout: page
 title: 
 permalink: /about/
 ---
-Currently I am a data scientist at [Tobania](https://www.tobania.be/nl-be/).
+Currently I am a data scientist at [Yields.io](https://www.yields.io/).
 
-I am an R shiny consultant, R shiny has been my passion for sometime now. I have always been a great supporter of open source and R shiny is one of the reasons why we should all support open source. Compared to the likes of power BI, tableau, Qlik and others, R shiny stands out.  
-
-
-The European Union awarded me a scholarship to work on the [REQUITE](https://www.requite.eu/) project as a Ph.D. student. The purpose of the REQUITE  was to try to predict which patients are more likely to have side effects from radiotherapy. 
-
-As part of my research, I developed Machine Learning algorithms to classify cancer patients receiving radiotherapy into two groups: (1) Those that will develop side-effects from the treatment and (2) those that will not develop side-effects. 
-
-Part of my job has been to coach students following the [Master of statistical data analysis at Gent University](https://studiekiezer.ugent.be/master-of-science-in-statistical-data-analysis-en)  on Machine Learning techniques. 
-
-I also supervised student projects in Machine Learning and tutor master thesis in Machine Learning.
 
 
 ### Contact me
 
 Tel: +32471600750
 
-[chamberlain.mbah@ugent.be](mailto:chamberlain.mbah@ugent.be)
+[chamberlain.mbah@ugent.be](mailto:chamberlain.mbah.f@gmail.com)
 
 
 ### Selected publications
