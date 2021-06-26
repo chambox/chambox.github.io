@@ -24,7 +24,7 @@ from tensorflow.keras.models import Model
 ```
 
 ## Loading the data
-The Fashon MNIST dataset is a very familiar data set that has been used in many tutorials to explain simple concepts about neural networks. We will do the same in this blog post.  Each image in the MNIST dataset is 28x28 pixels. 
+The Fashon MNIST dataset is a very familiar data set that has been used in many tutorials to explain simple concepts about neural networks. We will do the same in this blog post.  Each image in the MNIST dataset is 28x28 pixels. We will further scale the pixel value to lie in the interval [0,1].
 
 
 ```python
@@ -45,6 +45,31 @@ print (x_test.shape)
 
     (60000, 28, 28)
     (10000, 28, 28)
+
+
+
+```python
+num = 20
+images = x_train[:num]
+# labels = y_train[:num]
+
+num_row = 2
+num_col = 10
+# plot images
+fig, axes = plt.subplots(num_row, num_col, figsize=(1.5*num_col,2*num_row))
+for i in range(num):
+    ax = axes[i//num_col, i%num_col]
+    ax.imshow(images[i], cmap='gray')
+    # ax.set_title('Label: {}'.format(labels[i]))
+plt.tight_layout()
+plt.show()
+
+```
+
+
+    
+![svg](autoencoders_files/autoencoders_5_0.svg)
+    
 
 
 We have printed the dimension  of the train and test dataset,  there are 60k images in the training dataset and 10k in the test.
