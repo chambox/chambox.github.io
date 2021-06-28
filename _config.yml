@@ -89,3 +89,5 @@ exclude:
   - CNAME
 
 remote_theme: Dinky
+
+theme: jekyll-theme-leap-day
