@@ -1,12 +1,13 @@
 
 .highlight {
   background-color: #0a0a09;
-  padding: 5px 5px 5px 7px;
+  border-radius: 25px;
+  padding: 0px 0px 0px 0px;
   border: 1px solid #ddd;
   -moz-box-shadow: 1px 1px rgba(0,0,0,0.1);
   -webkit-box-shadow: 1px 1px rgba(0,0,0,0.1);
   box-shadow: 1px 1px rgba(0,0,0,0.1);
-  margin: 1px 0 1px 0;
+  margin: 10px 0 10px 0;
   overflow: scroll;
 }
 
