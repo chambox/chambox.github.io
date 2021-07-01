@@ -10,6 +10,8 @@ title: Data-driven Human Resources (10 mins read)
 
 ![Caption of here](../../images/hrdatadriven.png){:height="100%" width="100%"}
 
+
+
 * TOC
 {:toc}
 
