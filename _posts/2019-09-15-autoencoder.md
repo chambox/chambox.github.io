@@ -153,7 +153,7 @@ $$
 \text{mae} = \frac{1}{n}\sum_{i=1}^n{|y_i-\hat{y}_i|}.
 $$
 
-Where in this simple formular, we have $n$ data points $$ i = 1,2,...,n$$, $$y_i $$ refers to the actual (true/observed) data point and $$\hat{y}_i$$ is its estimate. In our use case, $$y_i$$ is the actual ECG and $$\hat{y}_i$$ will be its reconstructed version.
+Where in this simple formular, we have $$n$$ data points $$ i = 1,2,...,n$$, $$y_i $$ refers to the actual (true/observed) data point and $$\hat{y}_i$$ is its estimate. In our use case, $$y_i$$ is the actual ECG and $$\hat{y}_i$$ will be its reconstructed version.
 
 
 ```python
