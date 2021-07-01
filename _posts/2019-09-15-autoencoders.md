@@ -10,7 +10,6 @@ title: Anomaly detection with autoencoders (10 mins read)
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-
 In this blog post we will use autoencoders to detect anomalies in ECG5000 dataset. In writing this blog post I have assumed that the reader has some basic understanding of neural networks and autoencoders as a specific type of neural network. Jeremy Jordan has a nice 10mins-read blog post on autoencoders, you can find it [here](https://www.jeremyjordan.me/autoencoders/).  The ECG5000 dataset which we will use contains 50,000 Electrocardiograms (ECG). Each cardiogram has 140 data points.  Luckily for us, the data has been labeled into a normal and abnormal rhythm by medical experts. Our goal is to use autoencoders to see if they can mimic the knowledge of a medical doctor and identify abnormal Electrocardiograms.
 
 Our approach will be to (1) train the autoencoder on the normal data and (2) use our trained model to reconstruct the entire dataset. We hypothesize that abnormal Electrocardiograms will have a higher reconstruction error. Recall that an autoencoder takes the input data and projects it onto a lower-dimensional space that captures only the signals in the data. The data can then be reconstructed from the lower-dimensional space. Note here that if a data point is noisy its reconstruction error (the distance between the actual point and the reconstructed one) will be large. It is this simple principle that we use to identity anomalies. 
@@ -252,28 +251,6 @@ train_data = tf.cast(train_data, tf.float32)
 test_data = tf.cast(test_data, tf.float32)
 ```
 
-    2021-07-01 14:47:06.736378: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
-    2021-07-01 14:47:06.760692: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
-    2021-07-01 14:47:06.760896: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
-    pciBusID: 0000:01:00.0 name: Quadro T2000 computeCapability: 7.5
-    coreClock: 1.5GHz coreCount: 16 deviceMemorySize: 3.82GiB deviceMemoryBandwidth: 104.34GiB/s
-    2021-07-01 14:47:06.760960: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
-    2021-07-01 14:47:06.761007: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublas.so.11'; dlerror: libcublas.so.11: cannot open shared object file: No such file or directory
-    2021-07-01 14:47:06.761046: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublasLt.so.11'; dlerror: libcublasLt.so.11: cannot open shared object file: No such file or directory
-    2021-07-01 14:47:06.761084: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcufft.so.10'; dlerror: libcufft.so.10: cannot open shared object file: No such file or directory
-    2021-07-01 14:47:06.761121: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcurand.so.10'; dlerror: libcurand.so.10: cannot open shared object file: No such file or directory
-    2021-07-01 14:47:06.761159: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusolver.so.11'; dlerror: libcusolver.so.11: cannot open shared object file: No such file or directory
-    2021-07-01 14:47:06.761195: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusparse.so.11'; dlerror: libcusparse.so.11: cannot open shared object file: No such file or directory
-    2021-07-01 14:47:06.761234: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory
-    2021-07-01 14:47:06.761244: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1766] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
-    Skipping registering GPU devices...
-    2021-07-01 14:47:06.762164: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
-    To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-    2021-07-01 14:47:06.762529: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
-    2021-07-01 14:47:06.762538: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      
-
-
-
 As mentioned earlier, we will only train the autoencoder on the data with normal rhythms. Electrocardiograms with normal rhythm are labeled with 1. We will separate the normal rhythm from the abnormal ones in the following chunk of code.
 
 
@@ -377,7 +354,80 @@ history = autoencoder.fit(normal_train_data, normal_train_data,
     Epoch 3/40
     3/3 [==============================] - 0s 12ms/step - loss: 0.0567 - val_loss: 0.0528
     Epoch 4/40
-   
+    3/3 [==============================] - 0s 8ms/step - loss: 0.0557 - val_loss: 0.0520
+    Epoch 5/40
+    3/3 [==============================] - 0s 8ms/step - loss: 0.0544 - val_loss: 0.0512
+    Epoch 6/40
+    3/3 [==============================] - 0s 11ms/step - loss: 0.0527 - val_loss: 0.0503
+    Epoch 7/40
+    3/3 [==============================] - 0s 8ms/step - loss: 0.0509 - val_loss: 0.0493
+    Epoch 8/40
+    3/3 [==============================] - 0s 10ms/step - loss: 0.0490 - val_loss: 0.0482
+    Epoch 9/40
+    3/3 [==============================] - 0s 8ms/step - loss: 0.0470 - val_loss: 0.0470
+    Epoch 10/40
+    3/3 [==============================] - 0s 10ms/step - loss: 0.0449 - val_loss: 0.0459
+    Epoch 11/40
+    3/3 [==============================] - 0s 10ms/step - loss: 0.0427 - val_loss: 0.0449
+    Epoch 12/40
+    3/3 [==============================] - 0s 8ms/step - loss: 0.0405 - val_loss: 0.0437
+    Epoch 13/40
+    3/3 [==============================] - 0s 9ms/step - loss: 0.0384 - val_loss: 0.0426
+    Epoch 14/40
+    3/3 [==============================] - 0s 9ms/step - loss: 0.0364 - val_loss: 0.0418
+    Epoch 15/40
+    3/3 [==============================] - 0s 8ms/step - loss: 0.0346 - val_loss: 0.0411
+    Epoch 16/40
+    3/3 [==============================] - 0s 9ms/step - loss: 0.0330 - val_loss: 0.0403
+    Epoch 17/40
+    3/3 [==============================] - 0s 9ms/step - loss: 0.0315 - val_loss: 0.0397
+    Epoch 18/40
+    3/3 [==============================] - 0s 9ms/step - loss: 0.0302 - val_loss: 0.0392
+    Epoch 19/40
+    3/3 [==============================] - 0s 8ms/step - loss: 0.0291 - val_loss: 0.0387
+    Epoch 20/40
+    3/3 [==============================] - 0s 9ms/step - loss: 0.0282 - val_loss: 0.0383
+    Epoch 21/40
+    3/3 [==============================] - 0s 9ms/step - loss: 0.0275 - val_loss: 0.0380
+    Epoch 22/40
+    3/3 [==============================] - 0s 9ms/step - loss: 0.0268 - val_loss: 0.0375
+    Epoch 23/40
+    3/3 [==============================] - 0s 9ms/step - loss: 0.0263 - val_loss: 0.0371
+    Epoch 24/40
+    3/3 [==============================] - 0s 10ms/step - loss: 0.0258 - val_loss: 0.0368
+    Epoch 25/40
+    3/3 [==============================] - 0s 12ms/step - loss: 0.0253 - val_loss: 0.0362
+    Epoch 26/40
+    3/3 [==============================] - 0s 10ms/step - loss: 0.0248 - val_loss: 0.0361
+    Epoch 27/40
+    3/3 [==============================] - 0s 8ms/step - loss: 0.0244 - val_loss: 0.0354
+    Epoch 28/40
+    3/3 [==============================] - 0s 8ms/step - loss: 0.0240 - val_loss: 0.0353
+    Epoch 29/40
+    3/3 [==============================] - 0s 17ms/step - loss: 0.0236 - val_loss: 0.0349
+    Epoch 30/40
+    3/3 [==============================] - 0s 8ms/step - loss: 0.0232 - val_loss: 0.0349
+    Epoch 31/40
+    3/3 [==============================] - 0s 8ms/step - loss: 0.0228 - val_loss: 0.0344
+    Epoch 32/40
+    3/3 [==============================] - 0s 9ms/step - loss: 0.0224 - val_loss: 0.0340
+    Epoch 33/40
+    3/3 [==============================] - 0s 11ms/step - loss: 0.0221 - val_loss: 0.0339
+    Epoch 34/40
+    3/3 [==============================] - 0s 8ms/step - loss: 0.0218 - val_loss: 0.0337
+    Epoch 35/40
+    3/3 [==============================] - 0s 8ms/step - loss: 0.0216 - val_loss: 0.0334
+    Epoch 36/40
+    3/3 [==============================] - 0s 9ms/step - loss: 0.0214 - val_loss: 0.0331
+    Epoch 37/40
+    3/3 [==============================] - 0s 9ms/step - loss: 0.0212 - val_loss: 0.0330
+    Epoch 38/40
+    3/3 [==============================] - 0s 9ms/step - loss: 0.0209 - val_loss: 0.0330
+    Epoch 39/40
+    3/3 [==============================] - 0s 10ms/step - loss: 0.0207 - val_loss: 0.0329
+    Epoch 40/40
+    3/3 [==============================] - 0s 8ms/step - loss: 0.0205 - val_loss: 0.0328
+
 
 Note that although, the training is done on the normal rythm ECG, the validation is done on the entire test dataset. 
 
@@ -526,3 +576,8 @@ print_stats(preds, test_labels)
 ## Final words
 
 In this blog post, we have seen how autoencoders can be used to detect anomalies in our data. The ECG data is a  nice example to illustrate the idea, however, with a typical real-world use case, there will be more shortcomings. 
+
+
+```python
+
+```
