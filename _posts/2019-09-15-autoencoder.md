@@ -257,7 +257,7 @@ fig = go.Figure()
 fig = fig.add_trace(go.Histogram(x=train_loss[None,:][0],name='Normal loss'))
 fig.show()
 ```
-![Caption of here](../../images/autoencoder/error2.png){:height="100%" width="100%"}
+![Caption of here](../../images/error2.png){:height="100%" width="100%"}
 
 We now define the threshold.
 
@@ -306,7 +306,7 @@ fig.show()
 
 
 
-![Caption of here](../../images/autoencoder/error2.png){:height="100%" width="100%"}
+![Caption of here](../../images/error2.png){:height="100%" width="100%"}
 
 
 
