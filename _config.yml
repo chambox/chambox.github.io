@@ -42,7 +42,7 @@ theme_settings:
   gitter:
   google_plus:
   instagram:
-  linkedin:  # Full URL
+  linkedin:  https://www.linkedin.com/in/chamberlain-mbah
   pinterest:
   reddit:
   soundcloud:
@@ -85,7 +85,7 @@ footer-links:
   flickr:
   github: chambox
   instagram:
-  linkedin: linkedin.com/in/chamberlain-mbah-700a295
+  linkedin: https://www.linkedin.com/in/chamberlain-mbah
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: ChamberlainMbah
