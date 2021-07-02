@@ -3,25 +3,23 @@ layout: page
 title: 
 permalink: /about/
 ---
-Currently I am a data scientist at [Yields.io](https://www.yields.io/). 
+Currently, I am a data scientist at [Yields.io](https://www.yields.io/). 
 
 
-I am passionate about a lot interesting technogies, however, there are only 24 hours in a day. With the constraint of time, I have chosen to focus on few things:
+I am passionate about a lot of interesting technologies, however, there are only 24 hours in a day. With the constraint of time, I have chosen to focus on few things:
 * Artificial intelligence (AI) and deep learning
-* Blockchain and digital currencies and their connect to  AI
-* Finance  in relation to AI 
+* Blockchain, digital currencies, and their connection to  AI
+* Finance and its connection to AI 
 
 I work by a simple principle, "understand concepts and explain them even clearer".
 
 Besides AI, I like eating good food (I hate cooking though), my good friend and I  have created a social platform linking hungry African food lovers to excellent home cooks.
-If you want to know more about good food from African origin, visit us here https://afroeat.be/.
-
+If you want to know more about good food of African origin, visit us here https://afroeat.be/.
 
 
 ### Contact me
 
 Tel: +32471600750
-
 [chamberlain.mbah.f@gmail.com](mailto:chamberlain.mbah.f@gmail.com)
 
 
