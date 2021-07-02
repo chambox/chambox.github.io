@@ -14,7 +14,7 @@ I am passionate about a lot of interesting technologies, however, there are only
 I work by a simple principle, "understand concepts and explain them even clearer".
 
 Besides AI, I like eating good food (I hate cooking though), my good friend and I  have created a social platform linking hungry African food lovers to excellent home cooks.
-If you want to know more about good food of African origin, visit us here https://afroeat.be/.
+If you want to know more about good food of African origin, visit us [here](https://afroeat.be/).
 
 
 ### Contact me
