@@ -5,6 +5,11 @@ permalink: /about/
 ---
 Currently I am a data scientist at [Yields.io](https://www.yields.io/).
 
+I am passionate about a lot interesting technogies, however, there are only 24 hours in a day. With the constraint of time. I have chosen to focus on few things:
+* Artificial intelligence (AI) and deep learning
+* Blockchain and digital currencies in relation to AI
+* Finance  in relation to AI 
+
 
 
 ### Contact me
@@ -19,10 +24,17 @@ Tel: +32471600750
 *High dimensional prediction of binary outcome in the presence of between-study heterogeneity*.
 Statistical Methods in Medical Research (in press).
 
-**C Mbah**, K De Ruyck, S De Schrijver, C De Sutter, K Schiettecatte, C Monten, L Paelinck, W De Neve, H Thierens, C West, G Amorim, O Thas & L Veldeman (2018). *A new approach for modeling patient overall radiosensitivity and predicting multiple toxicity endpoints for breast cancer patients*. Acta Oncologica, 57:5, 604-612, DOI: 10.1080/0284186X.2017.1417633
+**C Mbah**, K De Ruyck, S De Schrijver, C De Sutter, K Schiettecatte, C Monten, L Paelinck, W De Neve, H Thierens, C West, G Amorim, O Thas & L Veldeman (2018).
+
+*A new approach for modeling patient overall radiosensitivity and predicting multiple toxicity endpoints for breast cancer patients*. 
+Acta Oncologica, 57:5, 604-612, DOI: 10.1080/0284186X.2017.1417633
 
 
 **C Mbah**, H Thierens, O Thas, J De Neve, J Chang-Claude, P Seibold, A  Botma, C West.
 *Pitfalls in Prediction Modeling for Normal Tissue Toxicity in Radiation Therapy: An Illustration With the Individual Radiation Sensitivity and Mammary Carcinoma Risk Factor Investigation Cohorts*.
 Int J Radiat Oncol Biol Phys. 2016 Aug 1;95(5):1466-1476. doi: 10.1016/j.ijrobp.2016.03.034. Epub 2016 Apr 1.
+
+**C Mbah**, K Peremans, S Van Aelst, DF Benoit.
+*Robust Bayesian seemingly unrelated regression model*.
+Computational Statistics . 2019.
 

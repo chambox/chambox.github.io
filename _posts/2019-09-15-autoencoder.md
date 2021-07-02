@@ -340,6 +340,7 @@ print_stats(preds, test_labels)
     Recall = 0.8964285714285715
 
 
+The complete notebook can be found [here](https://github.com/chambox/chambox.github.io/tree/master/notebooks/autoencoder).
 ## Final words
 
 In this blog post, we have seen how autoencoders can be used to detect anomalies in our data. The ECG data is a  nice example to illustrate the idea, however, with a typical real-world use case, there will be more shortcomings. 
