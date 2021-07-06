@@ -16,7 +16,7 @@ I work by a simple principle, "understand concepts and explain them even clearer
 Besides AI, I like eating good food (I hate cooking though), my good friend and I  have created a social platform linking hungry African food lovers to excellent home cooks.
 If you want to know more about good food of African origin, visit us [here](https://afroeat.be/).
 
-
+What actually keeps me going is my little three year-old who has a challenged me in many ways. He only see's the picture of a family member once and can recognise them in all subsequent pictures accurately. Unlike AI models that need to see millions  of picture to make a correct idenfication.  He is smart and learns faster than any AI, I am kidding I will not compare my son to AI.  
 ### Contact me
 
 Tel: +32471600750
