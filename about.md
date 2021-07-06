@@ -5,6 +5,8 @@ permalink: /about/
 ---
 Currently, I am a data scientist at [Yields.io](https://www.yields.io/). 
 
+[My CV](https://www.yields.io/). 
+
 
 I am passionate about a lot of interesting technologies, however, there are only 24 hours in a day. With the constraint of time, I have chosen to focus on few things:
 * Artificial intelligence (AI) and deep learning
@@ -16,7 +18,7 @@ I work by a simple principle, "understand concepts and explain them even clearer
 Besides AI, I like eating good food (I hate cooking though), my good friend and I  have created a social platform linking hungry African food lovers to excellent home cooks.
 If you want to know more about good food of African origin, visit us [here](https://afroeat.be/).
 
-What actually keeps me going is my little three year-old who has a challenged me in many ways. He only see's the picture of a family member once and can recognise them in all subsequent pictures accurately. Unlike AI models that need to see millions  of picture to make a correct idenfication.  He is smart and learns faster than any AI, I am kidding I will not compare my son to AI.  
+What keeps me going is my little three-year-old who challenges me in many ways. Unlike AI models that need millions of pictures to make a correct identification, my son only needs to see a picture of a family member once and accurately recognize them in all subsequent pictures.   He is smart and learns faster than any AI, I am kidding,  I will not compare my son to AI.  
 ### Contact me
 
 Tel: +32471600750
