@@ -7,3 +7,5 @@ scikit-learn==0.24.2
 tabulate
 tiingo==0.14.0
 yfinance==0.1.60
+python-binance==1.0.12
+requests==2.23.0
