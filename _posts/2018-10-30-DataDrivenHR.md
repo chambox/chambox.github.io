@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-driven Human Resources (10 mins read) 
+title: Data-driven Human Resources 
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Anomaly detection with autoencoders (10 mins read) 
+title: Anomaly detection with autoencoders 
 ---
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
