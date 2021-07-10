@@ -2,13 +2,13 @@
 layout: post
 title: Anomaly detection with autoencoders (10 mins read) 
 ---
-
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
 
 
 
