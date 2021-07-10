@@ -5,3 +5,5 @@ tensorflow==2.5.0
 matplotlib==3.4.2
 scikit-learn==0.24.2
 tabulate
+tiingo==0.14.0
+yfinance==0.1.60
