@@ -30,7 +30,7 @@ These are the steps we will take:
 5. Train AI model
 6. Put the model in production on AWS to start buying and selling crypto and making huge profits. 
 
-In this short blog post, I will show you how to fetch data from [Binance](https://www.binance.com/en) and store it as a `.csv`. 
+This short blog post is based on point 1., i.e., fetching data from binance, I will show you how to fetch data from [Binance](https://www.binance.com/en) and store it as a `.csv`. 
 
 Make sure your `requirements.txt` contains the following modules.
 
