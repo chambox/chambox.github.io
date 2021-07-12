@@ -11,6 +11,8 @@ title: Validating prediction models
 
 Nowadays machine learning (ML) and artificial intelligence (AI) are integral to most businesses. Decision-makers in many sectors, e.g., banking and finance, have employed ML-algorithms to do their heavy lifting. Though it sounds like a smart move, it is imperative to make sure these models are indeed doing what is expected of them. As employees of a bank, models are prone to mistakes and there is always a price to pay when we use ML-models. Hence, there is a need to validate models.
 
+![](../../images/validation_of_prediction_models.jpg)
+
 Model validation is a broad field and may cover several notions. In this article, we narrow down to prediction models. A model may be considered valid if:
 
 
