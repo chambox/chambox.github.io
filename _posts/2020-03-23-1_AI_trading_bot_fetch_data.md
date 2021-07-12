@@ -20,7 +20,7 @@ They buy when the price is low, and sell when the price is high. The real questi
 
 Here is the work flow:
 
-![](../../images/flow_diagram.jpg)
+![](../../images/flow_diagram.png)
 
 These are the steps we will take:
 1. Fetch market data from Binance
