@@ -14,7 +14,7 @@ title: 1. AI trading bot--Fetching data from Binance
 
 This blog post is the first in the series of `building an AI (Artificial intelligence) crypto trading bot`, the chambot. 
 
-The assumption we make here is that you are already familiar with how the stock, crypto, or foreign exchange work. If we pick crypto as our financial instrument without loss of generality, you will notice that the price of crypto is always moving up and down. This movement is risky for an investor who might incur huge losses if the crypto price drops significantly. On the other hand, traders that buy and sell crypto try to use these fluctuations in crypto prices to their advantage.
+The assumption we make here is that you are already familiar with how the stock, crypto, or foreign exchange work. If we pick crypto as our financial instrument without loss of generality, you will notice that the price of crypto is always moving up and down. This movement is risky for an investor who might incur huge losses if the crypto price drops significantly after buying at a higher price. On the other hand, traders that buy and sell crypto try to use these fluctuations in crypto prices to their advantage.
 
 They buy when the price is low, and sell when the price is high. The real question is when do you buy (hold a position) and when do you sell (leave a position). Many traders spend hours staring at the computer screen waiting for the right moment to act.  In a couple of blog posts, I will show how to build a robot that automatically buys at the low and sell at a high price. This bot is called the chambot and uses AI for smart buying and selling. We will need data to do this,  AI models need that has predictor variables and a target. Our workflow will reflect this. 
 
