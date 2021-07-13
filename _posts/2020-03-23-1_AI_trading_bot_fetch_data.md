@@ -23,7 +23,7 @@ Here is the work flow:
 ![](../../images/flow_diagram.png)
 
 These are the steps we will take:
-1. Fetch market data from Binance
+1. Fetch market data from [Binance](https://www.binance.com/en)
 2. Create a target variable
 3. Create predictor variables
 4. Merge the predictor variables and the target variable to form a dataset that will be used to train an AI model
