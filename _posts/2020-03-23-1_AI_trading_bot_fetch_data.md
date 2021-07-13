@@ -35,6 +35,7 @@ This short blog post is based on point 1., i.e., fetching data from binance, I w
 Make sure your `requirements.txt` contains the following modules.
 
 
+
 ```python
 import requests
 import json 
@@ -51,53 +52,24 @@ import config ### this config file should contain your API keys API_KEY_BINANCE 
               ### ofcourse I will not put mine here :) 
 ```
 
-We will define two important functions that will fetch data and download the data. We will set the `batch_size` and the `binsizes`, as the name implies these are the batch size and the bin sizes. 
+We will define two important functions that will fetch data and download the data. We will set the `batch_size` and the `binsizes`, as the name implies these are the batch size and the bin sizes.  We will also create a binance client for subsequent use.
 
 
 ```python
 binsizes = {"1m": 1, "15m": 15, "1h": 60, "1d": 1440}
 batch_size = 750
-pd.DataFrame(binsizes,index=[0])
+result = pd.DataFrame(binsizes,index=[0])
+
+binance_client = Client(api_key=config.API_KEY_BINANCE, 
+                        api_secret=config.API_SECRET_BINANCE)
+                        
+result.to_markdown()
 ```
 
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>1m</th>
-      <th>15m</th>
-      <th>1h</th>
-      <th>1d</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>15</td>
-      <td>60</td>
-      <td>1440</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    '|    |   1m |   15m |   1h |   1d |\n|---:|-----:|------:|-----:|-----:|\n|  0 |    1 |    15 |   60 | 1440 |'
 
 
 
@@ -146,7 +118,7 @@ def get_all_binance(symbol, kline_size, save = False):
         data_df = data
     data_df.set_index('timestamp', inplace=True)
     if save: 
-        data_df.to_csv(f'data/{filename}')
+        data_df.to_csv(f'{filename}')
     print('All caught up..!')
     return data_df
 
@@ -159,19 +131,16 @@ def get_all_binance(symbol, kline_size, save = False):
 tickers = requests.get('https://www.binance.com/api/v1/ticker/allPrices').text
 tickers = pd.DataFrame(json.loads(tickers))['symbol'].values
 tickers = tickers[[tk.find('USDT') not in [0,-1] for  tk in tickers]]
-tickers
+tickers[0:20]
 ```
+
 
 
 
     array(['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'BCCUSDT', 'NEOUSDT', 'LTCUSDT',
            'QTUMUSDT', 'ADAUSDT', 'XRPUSDT', 'EOSUSDT', 'TUSDUSDT',
            'IOTAUSDT', 'XLMUSDT', 'ONTUSDT', 'TRXUSDT', 'ETCUSDT', 'ICXUSDT',
-           'VENUSDT', 'NULSUSDT', 'VETUSDT', 'PAXUSDT', 'BCHABCUSDT',
-           'BCHSVUSDT', 'USDCUSDT', 'LINKUSDT', 'WAVESUSDT', 'BTTUSDT',
-           'USDSUSDT', 'ONGUSDT', 'HOTUSDT', 'ZILUSDT', 'ZRXUSDT', 'FETUSDT',
-           'BATUSDT', 'XMRUSDT', 'ZECUSDT', 'IOSTUSDT', 'CELRUSDT',
-           ], dtype=object)
+           'VENUSDT', 'NULSUSDT', 'VETUSDT'], dtype=object)
 
 
 
@@ -181,9 +150,27 @@ We can now loop through the `tickers` list and download the data for all `XUSDT`
 ```python
 tickers=['ETHUSDT']
 for symbol in tickers:
-    get_all_binance(symbol, '15m', save = True)
+    df = get_all_binance(symbol, '15m', save = True)
 ```
 
-Hopefully everything has worked fine. Make sure you have a `data` folder in your working directory.  In subsequent blog posts, will start building the `chambot`. The full code can be found [here](https://github.com/chambox/chambot/blob/main/binance_data_fetcher.py). 
+    Downloading all available 15m data for ETHUSDT. Be patient..!
+    All caught up..!
+
+
+Hope fully everything has worked fine.  Let's visualise the data that was downloaded:
+
+
+```python
+df.head().to_markdown()
+```
+
+
+
+
+    '| timestamp           |   open |   high |    low |   close |   volume |    close_time |   quote_av |   trades |   tb_base_av |   tb_quote_av |   ignore |\n|:--------------------|-------:|-------:|-------:|--------:|---------:|--------------:|-----------:|---------:|-------------:|--------------:|---------:|\n| 2017-08-17 04:00:00 | 301.13 | 301.13 | 298    |  298    |  5.80167 | 1502943299999 |    1744.77 |       22 |      5.48392 |       1649.45 |  46528.3 |\n| 2017-08-17 04:15:00 | 298    | 300.8  | 298    |  299.39 | 31.4407  | 1502944199999 |    9396.92 |       26 |     12.1171  |       3625.17 |  46537.3 |\n| 2017-08-17 04:30:00 | 299.39 | 300.79 | 299.39 |  299.6  | 52.9358  | 1502945099999 |   15851.1  |       39 |     28.3816  |       8499.79 |  46678.9 |\n| 2017-08-17 04:45:00 | 299.6  | 302.57 | 299.6  |  301.61 | 35.4907  | 1502945999999 |   10692    |       42 |     34.5811  |      10419    |  47039.7 |\n| 2017-08-17 05:00:00 | 301.61 | 302.57 | 300.95 |  302.01 | 81.6924  | 1502946899999 |   24620.7  |       52 |     80.2634  |      24189.8  |  47181.9 |'
+
+
+
+In subsequent blog posts, we will start building the `chambot`. Do not miss to be part of this exciting journey. 
 
 
