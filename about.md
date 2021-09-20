@@ -18,7 +18,7 @@ I work by a simple principle, "understand concepts and explain them even clearer
 Besides AI, I like eating quality food (I hate cooking though). My bosom friend and I  have created a community-driven platform that links hungry African food lovers to excellent home cooks.
 If you interesting in the Afro cuisine, visit us [here](https://afroeat.be/).
 
-What keeps me going is my precious three-year-old mini-me who challenges me in many ways. Unlike AI models that need millions of pictures to make a correct identification, my son only needs to see a picture of a family member once and recognizes them correctly in all subsequent pictures.   He is bright and learns faster than any AI (I am kidding, .he is incomparable)
+What keeps me going is my precious three-year-old mini-me who challenges me in many ways. Unlike AI models that need millions of pictures to make a correct identification, my son only needs to see a picture of a family member once and recognizes them correctly in all subsequent pictures.   He is bright and learns faster than any AI (I am kidding, he is incomparable)
 ### Contact me
 
 Tel: +32471600750
