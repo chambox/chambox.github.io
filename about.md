@@ -27,7 +27,7 @@ Tel: +32471600750
 
 ### Selected publications
 **C Mbah**, **J De Neve**, **O Thas**.
-*High dimensional prediction of binary outcome in the presence of between-study heterogeneity*.
+High dimensional prediction of binary outcome in the presence of between-study heterogeneity.
 Statistical Methods in Medical Research (in press).
 
 **C Mbah**, K De Ruyck, S De Schrijver, C De Sutter, K Schiettecatte, C Monten, L Paelinck, W De Neve, H Thierens, C West, G Amorim, O Thas & L Veldeman (2018).
