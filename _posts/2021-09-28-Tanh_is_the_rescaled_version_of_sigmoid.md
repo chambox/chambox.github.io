@@ -20,10 +20,11 @@ $$
 $$
 
 Now look 
+
 $$
 \begin{align*}
 2 \text{sigmoid}(2x) -1& = 2\frac{e^{2x}}{1+e^{2x}}-1\\
-&= \frac{e^{2x}}{1+e^{2x}}+\frac{e^{2x}}{1+e^[2x]}-\frac{1+e^{2x}}{1+e^{2x}}\\
+&= \frac{e^{2x}}{1+e^{2x}}+\frac{e^{2x}}{1+e^{2x}}-\frac{1+e^{2x}}{1+e^{2x}}\\
 &=  \frac{e^{2x}+e^{2x}-1-e^{2x}}{1+e^{2x}}\\
 &= \frac{e^{2x}-1}{1+e^{2x}} = \frac{e^{2x}-1}{e^{2x}+1} = \text{tanh}(x)
 \end{align*}
