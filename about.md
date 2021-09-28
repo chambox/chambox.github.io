@@ -5,7 +5,7 @@ permalink: /about/
 ---
 Currently, I am a data scientist at [Yields.io](https://www.yields.io/). 
 
-[My CV](https://github.com/chambox/chambox.github.io/blob/master/Curriculum_Vitae__Main_v1.pdf). 
+[My CV](https://github.com/chambox/chambox.github.io/blob/master/Curriculum_Vitae__Main_v2.pdf). 
 
 
 I am passionate about a lot of interesting technologies, unfortunately there are only 24 hours in a day. With the constraint of time, I have chosen to focus on few things:
