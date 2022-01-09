@@ -3,7 +3,7 @@ layout: page
 title: 
 permalink: /about/
 ---
-Currently, I am a data scientist at [Yields.io](https://www.yields.io/). 
+Freelance data scientist. 
 
 [My CV](https://github.com/chambox/chambox.github.io/blob/master/Curriculum_Vitae__Main_v2.pdf). 
 
